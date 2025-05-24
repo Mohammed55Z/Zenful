@@ -1,0 +1,11 @@
+/* Arc-like Extension Menu */
+#unified-extensions-panel {
+  animation: ease-in-out;
+  transition-duration: 0.13s;
+}
+
+#customizationui-widget-panel {
+  border-radius: var(--zen-border-radius);
+  animation: ease-in-out;
+  transition-duration: 0.13s;
+}
