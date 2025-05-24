@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/4297fa94-d83d-4c11-a11b-8245b8bb0b3b)
 
 
-✨**What is Zenppuccin?**
+## ✨**What is Zenppuccin?**
 Zenppuccin is a comprehensive theme pack for Zen Browser that fuses three signature styles into one cohesive UI overhaul:
 
 * **Bubble-Clean:** A minimalist, decluttered look with smooth rounded elements and streamlined iconography.
@@ -15,7 +15,7 @@ This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, co
 
 ---
 
-🚀 **Installation Guide** (Windows, macOS, and Manual Linux)
+## 🚀 **Installation Guide** (Windows, macOS, and Manual Linux)
 
 1. 📁 **Create the Chrome Folder**
    If you haven’t already, follow the \[Zen Live Editing Guide] to locate or create your `chrome/` directory inside your Zen profile.
@@ -63,7 +63,7 @@ This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, co
 
 ---
 
-⚙️ **Enable Transparent Tabs**
+## ⚙️ **Enable Transparent Tabs**
 To let the background bleed through your tabs (for that true glass effect):
 
 1. In the address bar, go to `about:config`.
@@ -72,7 +72,7 @@ To let the background bleed through your tabs (for that true glass effect):
 
 ---
 
-**Customization Tips**
+## **Customization Tips**
 
 * Want to tweak the mauve accent? Open `Zenppuccin.css` under `Zen-Catppuccin/` and adjust the `--zen-primary-color` or other CSS variables.
 * Prefer fewer animations? In `Nebula.css`, comment out or reduce the animation durations in the `@keyframes` sections.
