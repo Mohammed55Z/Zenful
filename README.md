@@ -1,5 +1,5 @@
 # Zenful
-My personal amazingly clean theme.
+## My personal amazingly clean theme.
 
 ✨**What is Zenppuccin?**
 Zenppuccin is a comprehensive theme pack for Zen Browser that fuses three signature styles into one cohesive UI overhaul:
