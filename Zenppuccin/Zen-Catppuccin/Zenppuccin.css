@@ -1,103 +1,6 @@
 /* Zenppuccin V1.0.0 */
 
 
-/* Catppuccin Mocha Mauve userChrome.css*/
-
-@media (prefers-color-scheme: dark) {
-
-  :root {
-    --zen-primary-color: #cba6f7 !important;
-    --zen-colors-border: #cba6f7 !important;
-    --toolbarbutton-icon-fill: #cba6f7 !important;
-    --lwt-text-color: #cdd6f4 !important;
-    --toolbar-field-color: #cdd6f4 !important;
-    --tab-selected-textcolor: rgb(204, 190, 246) !important;
-    --toolbar-field-focus-color: #cdd6f4 !important;
-    --toolbar-color: #cdd6f4 !important;
-    --newtab-text-primary-color: #cdd6f4 !important;
-    --arrowpanel-color: #cdd6f4 !important;
-    --arrowpanel-background: #1e1e2e !important;
-    --sidebar-text-color: #cdd6f4 !important;
-    --lwt-sidebar-text-color: #cdd6f4 !important;
-    --lwt-sidebar-background-color: #11111b !important;
-    --toolbar-bgcolor: #313244 !important;
-    --newtab-background-color: #1e1e2e !important;
-  }
-
-  .sidebar-placesTree {
-    background-color: #1e1e2e !important;
-  }
-
-  #zen-workspaces-button {
-    background-color: #1e1e2e !important;
-  }
-
-  #urlbar-background {
-    background-color: #1e1e2e !important;
-  }
-
-  .content-shortcuts {
-    background-color: #1e1e2e !important;
-    border-color: #cba6f7 !important;
-  }
-
-  .urlbarView-url {
-    color: #cba6f7 !important;
-  }
-
-  #zenEditBookmarkPanelFaviconContainer {
-    background: #11111b !important;
-  }
-
-  toolbar .toolbarbutton-1 {
-    &:not([disabled]) {
-      &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack){
-        fill: #11111b;
-      }
-    }
-  }
-
-  .identity-color-blue {
-    --identity-tab-color: #89b4fa !important;
-    --identity-icon-color: #89b4fa !important;
-  }
-
-  .identity-color-turquoise {
-    --identity-tab-color: #94e2d5 !important;
-    --identity-icon-color: #94e2d5 !important;
-  }
-
-  .identity-color-green {
-    --identity-tab-color: #a6e3a1 !important;
-    --identity-icon-color: #a6e3a1 !important;
-  }
-
-  .identity-color-yellow {
-    --identity-tab-color: #f9e2af !important;
-    --identity-icon-color: #f9e2af !important;
-  }
-
-  .identity-color-orange {
-    --identity-tab-color: #fab387 !important;
-    --identity-icon-color: #fab387 !important;
-  }
-
-  .identity-color-red {
-    --identity-tab-color: #f38ba8 !important;
-    --identity-icon-color: #f38ba8 !important;
-  }
-
-  .identity-color-pink {
-    --identity-tab-color: #f5c2e7 !important;
-    --identity-icon-color: #f5c2e7 !important;
-  }
-
-  .identity-color-purple {
-    --identity-tab-color: #cba6f7 !important;
-    --identity-icon-color: #cba6f7 !important;
-  }
-}
-
 /* === SVG Separator Line === */
 .vertical-pinned-tabs-container-separator {
     background: none !important; /* Remove original background line */
@@ -373,17 +276,6 @@
   width: 30% !important;
 }
 
-/* URL bar cleanup - hide unnecessary elements */
-#page-action-buttons,
-#identity-permission-box {
-  display: none !important;
-}
-
-/* No workspace indicator */
-#zen-current-workspace-indicator-container {
-  display: none !important;
-}
-
 /* No window controls - macOS */
 #zen-sidebar-top-buttons {
   .titlebar-buttonbox-container {
@@ -584,6 +476,7 @@ body:not(
   }
 }
 
+
 /*******************************************************************************
  * EXTENSIONS STYLING
  ******************************************************************************/
@@ -591,7 +484,7 @@ body:not(
 /* Extension button scale for macOS */
 #unified-extensions-button {
   image {
-    scale: 1.1;
+    scale: 1.25;
   }
 }
 
@@ -682,6 +575,56 @@ tab[busy] {
  * TAB GROUPS STYLING
  ******************************************************************************/
 
+/* Tab group label styling */
+.tab-group-label,
+tab-group .tab-group-label {
+  width: 100% !important;
+  border: none !important;
+  border-radius: 1em !important;
+  outline: none !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+  padding-left: 10px !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 20%,
+    transparent
+  ) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 70%, #fff) !important;
+  scale: 1 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+tab-group .tab-group-label:hover {
+  padding-left: 15px !important;
+  background: color-mix(
+    in srgb,
+    var(--tab-group-color) 50%,
+    transparent
+  ) !important;
+  color: color-mix(in srgb, var(--tab-group-color) 30%, #fff) !important;
+}
+tab-group .tab-group-label:active {
+  scale: 0.9 !important;
+}
+tab-group:not([collapsed]) .tab-group-label {
+  border: 1.5px dashed
+    color-mix(in srgb, var(--tab-group-color) 50%, transparent) !important;
+}
+
+/* Label container margins */
+.tab-group-label-container {
+  margin-top: 3px !important;
+  margin-bottom: 0 !important;
+}
+tab-group[collapsed] .tab-group-label-container {
+  margin-bottom: 3px !important;
+}
+
+/* Hide label container's after pseudo */
+.tab-group-label-container::after {
+  display: none !important;
+}
+
 /* Tab stack styles */
 .tab-stack,
 tab-group .tab-stack {
@@ -759,158 +702,9 @@ body:has(
   filter: blur(10px) !important;
 }
 
-/*******************************************************************************
- * MEDIA PLAYER CUSTOMIZATION
- ******************************************************************************/
-
-/* Media player expanded layout */
-#zen-media-controls-toolbar {
-  order: 9999999 !important;
-  & .show-on-hover {
-    max-height: unset !important;
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    padding-right: 6px;
-    pointer-events: none;
-    transition: max-height 0.2s ease, opacity 0.2s ease, transform 0.2s ease,
-      padding 0.2s ease;
-  }
-}
-
-/* Media buttons hover effect */
-#zen-media-buttons-hbox > toolbarbutton {
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-
-  &:hover {
-    opacity: 1 !important;
-  }
-}
-
-/* Media controls hover expansion */
-#zen-media-controls-toolbar {
-  #zen-media-controls-hbox {
-    order: 0 !important;
-    height: 0 !important;
-    overflow: hidden !important;
-  }
-
-  &:hover {
-    #zen-media-controls-hbox {
-      height: fit-content !important;
-      opacity: 1 !important;
-    }
-  }
-}
-
-#zen-media-main-vbox > vbox {
-  order: 1 !important;
-}
-
-/* Media controls glow effect */
-#zen-media-controls-toolbar::after {
-  position: absolute;
-  content: "";
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  transform: scale(0.9) translateZ(0);
-  filter: blur(15px);
-  opacity: 0 !important;
-  transition: all 0.3s ease-in-out !important;
-  background: linear-gradient(
-    135deg,
-    color-mix(in srgb, var(--zen-primary-color) 10%, black),
-    var(--zen-primary-color),
-    color-mix(in srgb, var(--zen-primary-color) 25%, white),
-    var(--zen-primary-color),
-    light-dark(#fffd, #000d),
-    light-dark(#fffd, #000d),
-    var(--zen-primary-color),
-    color-mix(in srgb, var(--zen-primary-color) 50%, white),
-    color-mix(in srgb, var(--zen-primary-color) 25%, white),
-    var(--zen-primary-color),
-    color-mix(in srgb, var(--zen-primary-color) 25%, black),
-    light-dark(#fffd, #000d),
-    color-mix(in srgb, var(--zen-primary-color) 10%, black),
-    light-dark(#fffd, #000d),
-    color-mix(in srgb, var(--zen-primary-color) 75%, black),
-    color-mix(in srgb, var(--zen-primary-color) 50%, black),
-    color-mix(in srgb, var(--zen-primary-color) 25%, black),
-    color-mix(in srgb, var(--zen-primary-color) 10%, black),
-    light-dark(#fffd, #000d)
-  );
-
-  background-size: 200% 200%;
-}
-
-/* Playing media styling */
-#zen-media-controls-toolbar.playing {
-  toolbaritem {
-    background-color: light-dark(#fffd, #000d) !important;
-  }
-
-  padding: 16px 24px;
-  position: relative;
-  border-radius: 8px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
-
-  &::after {
-    opacity: 1 !important;
-    animation: animateGlow 5s cubic-bezier(0.1, 0.7, 0.5, 0.1) infinite;
-  }
-
-  &:hover::after {
-    height: 150%;
-  }
-}
-
-/* Glow animation keyframes */
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 20%;
-  }
-  100% {
-    background-position: 200% 20%;
-  }
-}
-
-/* Compact mode player (commented out) */
-/* #zen-main-app-wrapper[zen-compact-mode="true"]:not(:has(toolbox[zen-user-show=""], toolbox[zen-has-hover])) #zen-media-controls-toolbar{
-  
-  &.playing #zen-media-focus-button{
-    position: fixed !important;
-    left: 180px !important;
-    bottom:0 !important;
-    opacity: 1 !important;
-    z-index: 100000000 !important;
-    
-  }
-  
-  position: fixed !important;
-  transform: translateX(-120%) !important;
-  left: 0 !important;
-  bottom: 0 !important;
-  margin: 0px !important;
-  z-index: 1000 !important;
-    width: 150px !important;
-    height: 50px !important;
-  
-  &:hover{
-  transform: translateX(0) !important;
-    
-  #zen-media-focus-button{
-    position: initial !important;
-    left: initial !important;
-    bottom:initial !important;
-    opacity: initial !important;
-    z-index: initial !important;
-    }
-  }
-} */
+/* ============================================= */
+/* ======== personal pref only, keep off ======== */
+/* ============================================= */
 
 /* ────────────────────────────────────────────────────────────────────────── */
 /* Add a soft drop-shadow to Zen Browser’s “essential” tabs                */
@@ -925,81 +719,10 @@ body:has(
 /* ========== Bigger Text for Normal Tabs ========== */
 /* Increase font size of the tab title on regular tabs */
 #tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([essential]) .tab-label {
-  font-size: 16px !important;       /* adjust this value as you like */
+  font-size: 18px !important;       /* adjust this value as you like */
   line-height: 1.2 !important;       /* keeps text vertically centered */
   padding-block: 2px !important;     /* optional: tweak vertical padding */
 }
-
-/* === userChrome.css === */
-
-/* 1. Declare the XUL namespace */
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-
-/* 2. Only apply to the main browser window */
-@-moz-document url-prefix("chrome://browser/content/browser.xhtml") {
-
-  /* ===== Essential Tabs: Subtle Pulse Glow + Lift on Hover ===== */
-  @keyframes essentialTabGlow {
-    0%   { box-shadow: 0 0 5px rgba(0, 192, 255, 0.5); }
-    50%  { box-shadow: 0 0 15px rgba(0, 192, 255, 0.8); }
-    100% { box-shadow: 0 0 5px rgba(0, 192, 255, 0.5); }
-  }
-  #TabsToolbar .tabbrowser-tab[essential] {
-    animation: essentialTabGlow 3s ease-in-out infinite !important;
-    transition: transform 0.3s ease, filter 0.3s ease !important;
-    background: linear-gradient(
-      120deg,
-      rgba(0,192,255,0.15),
-      rgba(255,255,255,0.1),
-      rgba(0,192,255,0.15)
-    ) !important;
-    background-size: 200% 200% !important;
-    animation: essentialWave 8s ease-in-out infinite !important;
-  }
-  #TabsToolbar .tabbrowser-tab[essential]:hover {
-    transform: translateY(-2px) scale(1.05) !important;
-    filter: brightness(1.2) !important;
-  }
-  @keyframes essentialWave {
-    0%   { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
-
-  /* ===== Pinned Tabs: Quick Bounce + Jiggle ===== */
-  @keyframes pinnedTabBounce {
-    0%, 100% { transform: translateY(0); }
-    50%      { transform: translateY(-3px); }
-  }
-  @keyframes pinnedJiggle {
-    0%, 100% { transform: rotate(0deg); }
-    25%      { transform: rotate(2deg); }
-    75%      { transform: rotate(-2deg); }
-  }
-  #TabsToolbar .tabbrowser-tab[pinned] {
-    transition: transform 0.2s ease !important;
-  }
-  #TabsToolbar .tabbrowser-tab[pinned]:hover {
-    animation: pinnedTabBounce 0.6s ease-in-out 1 both !important;
-  }
-  #TabsToolbar .tabbrowser-tab[pinned]:hover .tab-icon-image {
-    animation: pinnedJiggle 0.5s ease-in-out 2 both !important;
-  }
-
-  /* ===== Soft Focus on Unselected Tabs ===== */
-  #TabsToolbar .tabbrowser-tab:not([selected]) {
-    filter: blur(0.5px) brightness(0.9) !important;
-    transition: filter 0.4s ease !important;
-  }
-  #TabsToolbar .tabbrowser-tab:not([selected]):hover {
-    filter: blur(0) brightness(1.05) !important;
-  }
-
-  /* ===== Universal Tab Transition Cleanup ===== */
-  #TabsToolbar .tabbrowser-tab {
-    transition: box-shadow 0.3s ease, transform 0.3s ease, filter 0.3s ease !important;
-  }
-
-} /* end -moz-document */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
