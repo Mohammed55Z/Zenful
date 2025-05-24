@@ -5,8 +5,8 @@
 Zenppuccin is a comprehensive theme pack for Zen Browser that fuses three signature styles into one cohesive UI overhaul:
 
 * **Bubble-Clean:** A minimalist, decluttered look with smooth rounded elements and streamlined iconography.
-* **Nebula:** Subtle animations, glass-like blur effects, and gentle gradient touches inspired by glassmorphism.
-* **Catppuccin (Mocha Mauve):** A soft, warm pastel palette that adapts to light or dark mode, giving your browser a cozy yet modern feel.
+* **Nebula:** a minimal theme made for Zen Browser which adds a lot of new animations, glass-like blur, UI changes, and more. It is inspired by glassmorphism and minimal gradients.
+* **Zen-Catppuccin:** A soft, warm pastel palette that adapts to light or dark mode, giving your browser a cozy yet modern feel.
 
 This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, context menus, pinned extensions, group tabs, the mini-player, URL bar, workspace buttons, and more—while still letting you tweak or disable any part if you prefer a lighter touch. ❤️
 
