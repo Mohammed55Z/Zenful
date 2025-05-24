@@ -1,4 +1,4 @@
-# Zenful
+# Zenppuccin
 ## My personal amazingly clean theme.
 
 ![image](https://github.com/user-attachments/assets/4297fa94-d83d-4c11-a11b-8245b8bb0b3b)
