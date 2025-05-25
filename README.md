@@ -43,6 +43,7 @@ This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, co
      @import "Zenppuccin/bubble-clean/bubble-clean.css";
      @import "Zenppuccin/Nebula/Nebula.css";
      @import "Zenppuccin/Zen-Catppuccin/Zenppuccin.css";
+     @import "Zenppuccin/arcline/Arcline.css";
      ```
    * Open (or create) your `userContent.css` and add:
 
