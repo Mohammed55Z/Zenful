@@ -1,0 +1,25 @@
+
+/* userChrome.css — Zen Browser: use SF Pro for all UI text */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* 1. Define a custom UI-font variable */
+:root {
+  --zen-ui-font: "SF Pro Text", "SF Pro Display", -apple-system, system-ui, sans-serif !important;
+  /* fallback on the root element */
+  font-family: var(--zen-ui-font) !important;
+}
+
+/* 2. Apply it across all toolbars, tabs, menus, panels, etc. */
+*,
+*::before,
+*::after,
+menupopup,
+panel,
+#navigator-toolbox,
+#TabsToolbar,
+#toolbar,
+.tabbrowser-tab,
+.tab-content,
+.tab-label {
+  font-family: var(--zen-ui-font) !important;
+}

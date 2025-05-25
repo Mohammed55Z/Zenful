@@ -1,6 +1,5 @@
 /* modules import */
 @import "modules/General-UI.css";
-@import "modules/Sidebar.css";
 @import "modules/Topbar-buttons.css";
 @import "modules/Pinned-extensions.css";
 @import "modules/Tabstyles.css";
@@ -10,8 +9,6 @@
 @import "modules/Miniplayer.css";
 @import "modules/BetterPiP.css";
 @import "modules/Animations(tabs).css";
-@import "modules/URLbar.css";
-@import "modules/Tabfolders.css";
 
 /* config import */
 @import "Nebula-config.css";

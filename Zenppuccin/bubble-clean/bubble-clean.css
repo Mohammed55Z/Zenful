@@ -2,11 +2,10 @@
 
 @import "modules/base.css";
 @import "modules/patches.css";
-@import "modules/urlbar.css";
 @import "modules/sidebar.css";
 @import "modules/icon.css";
 @import "modules/extension.css";
 @import "modules/animation.css";
 @import "modules/misc.css";
-
+@import "modules/urlbar.css";
 

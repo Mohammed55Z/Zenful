@@ -1,0 +1,18 @@
+
+/* ────────────────────────────────────────────────────────────────────────── */
+/* Add a soft drop-shadow to Zen Browser’s “essential” tabs                */
+/* Targets the tab background layer of any tab with zen-essential="true"   */
+/* You can tweak the shadow’s spread, blur and opacity as you like         */
+.tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+/* ────────────────────────────────────────────────────────────────────────── */
+
+
+/* ========== Bigger Text for Normal Tabs ========== */
+/* Increase font size of the tab title on regular tabs */
+#tabbrowser-tabs .tabbrowser-tab:not([pinned]):not([essential]) .tab-label {
+  font-size: 18px !important;       /* adjust this value as you like */
+  line-height: 1.2 !important;       /* keeps text vertically centered */
+  padding-block: 2px !important;     /* optional: tweak vertical padding */
+}
