@@ -1,7 +1,8 @@
 # Zenppuccin
 ## My personal amazingly clean theme.
 
-![image](https://github.com/user-attachments/assets/4297fa94-d83d-4c11-a11b-8245b8bb0b3b)
+![447375677-5ab83816-e6ad-41ec-a254-9c508c436297](https://github.com/user-attachments/assets/ddb76635-7c32-478f-b4bf-d9028aa90735)
+
 
 
 ## ✨**What is Zenppuccin?**
