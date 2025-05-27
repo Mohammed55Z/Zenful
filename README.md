@@ -6,11 +6,13 @@
 
 
 ## ✨**What is Zenppuccin?**
-Zenppuccin is a comprehensive theme pack for Zen Browser that fuses three signature styles into one cohesive UI overhaul:
+Zenppuccin is a comprehensive theme pack for Zen Browser that fuses four signature styles into one cohesive UI overhaul:
 
 * **Bubble-Clean:** A minimalist, decluttered look with smooth, rounded elements and streamlined iconography.
 * **Nebula:** a minimal theme made for Zen Browser which adds a lot of new animations, glass-like blur, UI changes, and more. It is inspired by glassmorphism and minimal gradients.
 * **Zen-Catppuccin:** made by me, cool animations, glow effects, Better font, text contrast, and more.
+* **Arcline:** Arc-like theme adds new icons, tab folders, copy link button, translate button, and more.
+
 
 This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, context menus, pinned extensions, group tabs, the mini-player, URL bar, workspace buttons, and more—while still letting you tweak or disable any part if you prefer a lighter touch. ❤️
 
