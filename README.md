@@ -76,7 +76,6 @@ To let the background bleed through your tabs (for that true glass effect):
 
 ## **Customization Tips**
 
-* Want to tweak the mauve accent? Open `Zenppuccin.css` under `Zen-Catppuccin/` and adjust the `--zen-primary-color` or other CSS variables.
 * Prefer fewer animations? In `Nebula.css`, comment out or reduce the animation durations in the `@keyframes` sections.
 
 Enjoy your freshly “zen-ified” browser! If you’d like further tweaks—whether lighter, darker, or more playful—just dive into the CSS or ask ChatGPT for custom snippets. 😊
