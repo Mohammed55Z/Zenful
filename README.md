@@ -1,4 +1,4 @@
-# Zenppuccin
+# ZenAura
 ## My personal amazingly clean theme.
 
 ![447375677-5ab83816-e6ad-41ec-a254-9c508c436297](https://github.com/user-attachments/assets/ddb76635-7c32-478f-b4bf-d9028aa90735)
