@@ -1,0 +1,6 @@
+/* sets the linkly Extention to the arc copy link icon */
+#pageAction-urlbar-copy-frame-url_jeffersonscher_com {
+  list-style-image: url("https://raw.githubusercontent.com/neurokitti/Arc_Zen_Theme/6da4c1ca78cc521bea1026ff024fcc8528ae6a49/icons/copy_link.svg") !important;
+  scale: 0.75;
+  filter: brightness(var(--icon-brightness)) !important;
+}

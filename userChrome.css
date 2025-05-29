@@ -1,9 +1,7 @@
-/* --- Zenppuccin --- */
+/*  ZenAura v1.3.0  */
 
-@import "Zenppuccin/bubble-clean/bubble-clean.css";
+/* Nebula */
+@import "ZenAura/Nebula/Nebula.css";
 
-@import "Zenppuccin/Nebula/Nebula.css";
-
-@import "Zenppuccin/Zen-Catppuccin/Zenppuccin.css";
-
-@import "Zenppuccin/arcline/Arcline.css";
+/* ZenAura */
+@import "ZenAura/Personal-Tweaks/ZenAura.css";
