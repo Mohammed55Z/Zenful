@@ -76,6 +76,10 @@ To let the background bleed through your tabs (for that true glass effect):
 
 ---
 
+## Add the extension [Zen Internet by Sameerasw](https://addons.mozilla.org/en-US/firefox/addon/zen-internet/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) (Optional)
+
+---
+
 ## **Customization Tips**
 
 * Prefer fewer animations? In `Nebula.css`, comment out or reduce the animation durations in the `@keyframes` sections.
