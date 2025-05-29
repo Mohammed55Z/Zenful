@@ -1,4 +1,10 @@
-# ZenAura
+<h1 align="center">ZenAura</h1>
+<div align="center">
+    <a href="https://zen-browser.app/">
+        <img width="120" alt="zen-badge-dark" src="https://github.com/user-attachments/assets/d6ab3ddf-6630-4062-92d0-22497d2a3f9a" />
+    </a>
+</div>
+
 ## My personal amazingly clean theme. (It was named Zenppuccin)
 
 ![image](https://github.com/user-attachments/assets/13d17774-6b41-4f0a-95a6-23036e5ff065)
