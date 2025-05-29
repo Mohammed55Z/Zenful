@@ -23,14 +23,14 @@ This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, co
 
 2. 📦 **Download & Extract**
 
-   * Download the `zenppuccin.zip` from the latest release.
-   * Extract it so you have a top-level `Zenppuccin/` folder plus two CSS files:
+   * Download the `ZenAura.zip` from the latest release.
+   * Extract it so you have a top-level `ZenAura/` folder plus two CSS files:
 
      ```
      userChrome.css
      userContent.css
      ```
-   * Move **both** the `Zenppuccin/` folder and those two CSS files into your `chrome/` directory.
+   * Move **both** the `ZenAura/` folder and those two CSS files into your `chrome/` directory.
 
 3. 🧩 **Apply the Theme**
    You have two options:
@@ -40,20 +40,17 @@ This theme customizes virtually every corner of Zen—tabs, toolbar, sidebar, co
    * Open your existing `userChrome.css` and add:
 
      ```css
-     /* Zenppuccin core modules */
-     @import "Zenppuccin/bubble-clean/bubble-clean.css";
-     @import "Zenppuccin/Nebula/Nebula.css";
-     @import "Zenppuccin/Zen-Catppuccin/Zenppuccin.css";
-     @import "Zenppuccin/arcline/Arcline.css";
+     /* ZenAura core modules */
+     @import "ZenAura/Nebula/Nebula.css";
+     @import "ZenAura/Personal-Tweaks/ZenAura.css";
      ```
    * Open (or create) your `userContent.css` and add:
 
      ```css
-     /* Nebula content tweaks */
-     @import "Zenppuccin/Nebula/Nebula-content.css";
+     /*  ZenAura v1.3.0  */
 
-     /* Zenppuccin color & transparency fixes */
-     @import "Zenppuccin/Zen-Catppuccin/Zenppuccin-content.css";
+     /* Nebula */
+     @import "ZenAura/Nebula/Nebula-content.css";
      ```
 
    **Option B – Use the Provided Files**
