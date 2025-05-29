@@ -1,12 +1,12 @@
 # ZenAura
-## My personal amazingly clean theme.
+## My personal amazingly clean theme. (It was named Zenppuccin)
 
 ![image](https://github.com/user-attachments/assets/13d17774-6b41-4f0a-95a6-23036e5ff065)
 
 
 
-## ✨**What is Zenppuccin?**
-Zenppuccin is a comprehensive theme pack for Zen Browser that fuses four signature styles into one cohesive UI overhaul:
+## ✨**What is ZenAura?**
+ZenAura is a comprehensive theme pack for Zen Browser that fuses four signature styles into one cohesive UI overhaul:
 
 * **Nebula:** a minimal theme made for Zen Browser which adds a lot of new animations, glass-like blur, UI changes, and more. It is inspired by glassmorphism and minimal gradients.
 * **Personal Tweaks:** made by me, cool animations, general ui tweaks, Better font, text contrast, essetial tweaks, Arc Copy link (Idk why to some users dosen't work) and more.
