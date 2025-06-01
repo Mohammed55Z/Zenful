@@ -13,7 +13,7 @@
 
 
 ## ✨**What is ZenAura?**
-ZenAura is a comprehensive theme pack for Zen Browser that fuses four signature styles into one cohesive UI overhaul:
+ZenAura is a comprehensive theme pack for Zen Browser that fuses two signature styles into one cohesive UI overhaul:
 
 * **Nebula:** a minimal theme made for Zen Browser which adds a lot of new animations, glass-like blur, UI changes, and more. It is inspired by glassmorphism and minimal gradients.
 * **Personal Tweaks:** made by me, cool animations, general ui tweaks, Better font, text contrast, essetial tweaks, Arc Copy link (Idk why to some users dosen't work) and more.
