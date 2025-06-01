@@ -1,4 +1,105 @@
 /*  ZenAura v1.3.0  */
 
 /* Nebula */
-@import "Nebula/Nebula-content.css";
+@import "ZenAura/Nebula/Nebula-content.css";
+
+/* Deepseek web transparency */
+
+@-moz-document domain("deepseek.com") {
+  /* Make base page transparent */
+  html,
+  body,
+  #root, /* React root element */
+  .app-main { /* Main content container */
+    background: transparent !important;
+  }
+
+  /* Remove opaque backgrounds from content sections */
+  .container,
+  .bg-white,
+  .bg-gray-50,
+  .dark\:bg-\[\#232222\] {
+    background-color: transparent !important;
+  }
+
+  /* Remove background from chat messages */
+  .message-container {
+    background: transparent !important;
+  }
+
+  /* Make input area transparent */
+  .input-wrapper {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px);
+  }
+
+  /* Adjust borders for better visibility */
+  .border-gray-200 {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+}
+
+
+/* Perplexity web transparency */
+
+@-moz-document domain("deepseek.com") {
+  /* Base transparency */
+  html, body, #root, #__next {
+    background: transparent !important;
+  }
+
+  /* Main content containers */
+  .relative.h-full, .flex.h-full, .overflow-hidden, 
+  .flex-col, .flex-1, .group.w-full, 
+  .text-token-text-primary, .flex.h-full.max-w-full {
+    background-color: transparent !important;
+  }
+
+  /* Chat containers */
+  .absolute.bottom-0, .flex.flex-col.items-center,
+  .w-full, .pt-2, .md\\:pt-0, .border-transparent,
+  .flex.flex-col, .items-stretch, .flex-1,
+  .overflow-y-auto, .relative, .h-full {
+    background: transparent !important;
+  }
+
+  /* Message bubbles */
+  .w-full.text-token-text-primary, .group,
+  .dark:bg-token-main-surface-secondary,
+  .bg-token-main-surface-secondary,
+  .dark\\:bg-token-main-surface-secondary,
+  .rounded-xl, .message, .px-4 {
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Input area */
+  .w-full.flex, .flex-col, .flex.flex-grow,
+  .md\\:py-4, .bg-token-main-surface-primary,
+  .dark\\:bg-token-main-surface-primary {
+    background: rgba(30, 30, 30, 0.3) !important;
+    backdrop-filter: blur(10px) !important;
+    border-color: rgba(255, 255, 255, 0.15) !important;
+  }
+
+  /* Buttons */
+  button, .btn {
+    background: rgba(70, 70, 70, 0.4) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  }
+
+  /* Text contrast */
+  .text-token-text-primary, .text-gray-800,
+  .text-gray-900, .text-white, .prose,
+  .markdown, .message-content {
+    color: rgba(255, 255, 255, 0.95) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(100, 100, 100, 0.5) !important;
+  }
+}
