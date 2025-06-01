@@ -7,7 +7,8 @@
 
 <h2 align="center">My personal amazingly clean theme. (It was named Zenppuccin)</h2>
 
-![image](https://github.com/user-attachments/assets/13d17774-6b41-4f0a-95a6-23036e5ff065)
+![image](https://github.com/user-attachments/assets/8546aa80-ffad-4525-9361-b6d56c70f54c)
+
 
 
 
